@@ -74,8 +74,8 @@
             android:layout_width="160dp"
             android:layout_height="82dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
             android:layout_marginVertical="20dp"
+            android:layout_marginTop="32dp"
             android:backgroundTint="#2D7830"
             android:text="@string/buttomtext" />
 
