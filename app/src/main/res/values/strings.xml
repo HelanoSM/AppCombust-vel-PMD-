@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Descubra o melhor combustível</string>
+    <string name="titletext">Gasolina ou Álcool</string>
+    <string name="gastext">Preço da Gasolina</string>
+    <string name="alcooltext">Preço do Álcool</string>
+    <string name="buttomtext">Calcular</string>
 </resources>

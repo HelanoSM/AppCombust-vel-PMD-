@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Find the best Fuel</string>
+    <string name="titletext">Gas or Alcool</string>
+    <string name="gastext">Gas Price</string>
+    <string name="alcooltext">Alcool Price</string>
+    <string name="buttomtext">Calculate</string>
+</resources>
