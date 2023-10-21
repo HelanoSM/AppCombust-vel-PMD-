@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Switch
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var edAlcool: EditText
     private lateinit var edGasolina: EditText
     private lateinit var swPercentual: Switch
+    private lateinit var tvResultado: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         edAlcool = findViewById(R.id.edAlcool)
         edGasolina = findViewById(R.id.edGasolina)
         swPercentual = findViewById(R.id.swPercentual)
+        tvResultado = findViewById(R.id.tvResultado)
         val btCalc = findViewById<Button>(R.id.btCalcular)
 
 
@@ -50,14 +53,12 @@ class MainActivity : AppCompatActivity() {
                 val gasolinaPrice = gasolinaText.toDouble()
 
                 val resultado = if (alcoolPrice / gasolinaPrice <= percentual) {
-                    "Álcool é a melhor escolha!"
+                    tvResultado.text = "Álcool é a melhor escolha!"
                 } else {
-                    "Gasolina é a melhor escolha!"
+                    tvResultado.text = "Gasolina é a melhor escolha!"
                 }
-
-                Toast.makeText(this, resultado, Toast.LENGTH_LONG).show()
             } else {
-                Toast.makeText(this, "Por favor preencha os preços dos combustíveis.", Toast.LENGTH_SHORT).show()
+                tvResultado.text = "Por favor preencha os preços dos combustíveis."
             }
         }
     }
